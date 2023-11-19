@@ -96,7 +96,8 @@ function intocmesteriscograma() {
   }
 
   // Crează conținut de fișier text
-  var fileContent = "- Câte pachete de țigări fumează pacientul pe an?" + "\n\n" +
+  var fileContent = "-- 1. Comportamente cu impact global asupra sănătăţii --" + "\n\n\n" +
+                    "- Câte pachete de țigări fumează pacientul pe an?" + "\n\n" +
                     pachetedetigari + "\n\n" +
                     "- S-a detectat un consum inadecvat de alcool?" + "\n\n" +
                     rezultatc1 + "\n\n" +
@@ -108,6 +109,7 @@ function intocmesteriscograma() {
                     observatiisanatateorala + "\n\n" +
                     "- IMC pacient:" + "\n\n" +
                     imc + "\n\n" +
+                    "\n" + "-- 2. Riscul Cardiovascular --" + "\n\n\n" +
                     "- Punctajul HeartScore SCORE:" + "\n\n" +
                     rezultatc2 + "\n\n" +
                     "- Tensiunea arterială sistolică a pacientului:" + "\n\n" +
@@ -116,11 +118,12 @@ function intocmesteriscograma() {
                     tensiunearterialadiastolica + " mmHg" + "\n\n" +
                     "- Colesterolul total al pacientului:" + "\n\n" +
                     colesterolultotal + " mmol/L" + "\n\n" +
+                    "\n" + "-- 3. Riscul Oncologic --" + "\n\n\n" +
                     "- Antecedentele personale şi heredocolaterale de neoplazie la rudele de gradul I prin filiaţie directă ale pacientului:" + "\n\n" +
                     antecedentepersonalesiheredocolaterale + "\n\n" +
                     "- Expunerile particulare (azbest, aniline etc.) ale pacientului:" + "\n\n" +
                     expunerileparticulare + "\n\n" +
-                    "\n\n" +
+                    "\n" + "-- Date de identificare --" + "\n\n\n" +
                     "Cod parafă medic: " + codparafamedic + "\n" +
                     "CNP pacient: " + CNPpacient + "\n" +
                     "Vârstă pacient: " + varstapacient + "\n" +
