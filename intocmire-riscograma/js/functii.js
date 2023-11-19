@@ -102,7 +102,7 @@ function intocmesteriscograma() {
                     "- Observații privind activitatea fizică a pacientului: " + observatiiactivitatefizica + "\n" +
                     "- Observații privind dieta pacientului: " + observatiidieta + "\n" +
                     "- Observații privind sănătatea orală a pacientului: " + observatiisanatateorala + "\n" +
-                    "- IMC pacient:" + imc + "\n" +
+                    "- IMC pacient: " + imc + "\n" +
                     "\n" + "-- 2. Riscul Cardiovascular" + "\n\n" +
                     "- Punctajul HeartScore SCORE: " + rezultatc2 + "\n" +
                     "- Tensiunea arterială sistolică a pacientului: " + tensiunearterialasistolica + " mmHg" + "\n" +
