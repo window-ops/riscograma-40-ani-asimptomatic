@@ -87,7 +87,7 @@ function intocmesteriscograma() {
     return;
   }
   else if (CNPpacient.length !== 13) {
-    alert("CNP-ul copilului trebuie să aibă 13 cifre!");
+    alert("CNP-ul pacientului trebuie să aibă 13 cifre!");
     return;
   }
   else if (varstapacient === "") {
@@ -99,12 +99,9 @@ function intocmesteriscograma() {
   var fileContent = "-- 1. Comportamente cu impact global asupra sănătăţii" + "\n\n" +
                     "- Câte pachete de țigări fumează pacientul pe an: " + pachetedetigari + "\n" +
                     "- S-a detectat un consum inadecvat de alcool: " + rezultatc1 + "\n" +
-                    "- Observații privind activitatea fizică a pacientului:" + "\n" +
-                    "\n" + observatiiactivitatefizica + "\n\n" +
-                    "- Observații privind dieta pacientului:" + "\n" +
-                    "\n" + observatiidieta + "\n\n" +
-                    "- Observații privind sănătatea orală a pacientului:" + "\n" +
-                    "\n" + observatiisanatateorala + "\n\n" +
+                    "- Observații privind activitatea fizică a pacientului: " + observatiiactivitatefizica + "\n" +
+                    "- Observații privind dieta pacientului: " + observatiidieta + "\n" +
+                    "- Observații privind sănătatea orală a pacientului: " + observatiisanatateorala + "\n" +
                     "- IMC pacient:" + imc + "\n" +
                     "\n" + "-- 2. Riscul Cardiovascular" + "\n\n" +
                     "- Punctajul HeartScore SCORE: " + rezultatc2 + "\n" +
@@ -112,10 +109,8 @@ function intocmesteriscograma() {
                     "- Tensiunea arterială diastolică a pacientului: " + tensiunearterialadiastolica + " mmHg" + "\n" +
                     "- Colesterolul total al pacientului: " + colesterolultotal + " mmol/L" + "\n" +
                     "\n" + "-- 3. Riscul Oncologic --" + "\n\n" +
-                    "- Antecedentele personale şi heredocolaterale de neoplazie la rudele de gradul I prin filiaţie directă ale pacientului:" + "\n" +
-                    "\n" + antecedentepersonalesiheredocolaterale + "\n\n" +
-                    "- Expunerile particulare (azbest, aniline etc.) ale pacientului:" + "\n" +
-                    "\n" + expunerileparticulare + "\n\n" +
+                    "- Antecedentele personale şi heredocolaterale de neoplazie la rudele de gradul I prin filiaţie directă ale pacientului: " + antecedentepersonalesiheredocolaterale + "\n" +
+                    "- Expunerile particulare (azbest, aniline etc.) ale pacientului: " + expunerileparticulare + "\n" +
                     "\n" + "-- Date de identificare --" + "\n\n" +
                     "Cod parafă medic: " + codparafamedic + "\n" +
                     "CNP pacient: " + CNPpacient + "\n" +
