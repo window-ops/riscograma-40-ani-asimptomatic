@@ -15,8 +15,10 @@ let tensiunearterialasistolica = 0;
 let tensiunearterialadiastolica = 0;
 let colesterolultotal = 0;
 
-let antecedentepersonalesiheredocolaterale = "";
+let antecedentepersonalesiheredocolateraledeneoplazie = "";
 let expunerileparticulare = "";
+
+let antecedentepersonalesiheredocolateraledeadictie = "";
 
 let CUIfurnizor = "";
 let codparafamedic = "";
@@ -66,7 +68,8 @@ function intocmesteriscograma() {
   tensiunearterialasistolica = document.getElementById("tensiunearterialasistolicainput").value;
   tensiunearterialadiastolica = document.getElementById("tensiunearterialadiastolicainput").value;
   colesterolultotal = document.getElementById("colesterolultotalinput").value;
-  antecedentepersonalesiheredocolaterale = document.getElementById("antecedentepersonalesiheredocolateraleinput").value;
+  antecedentepersonalesiheredocolateraledeneoplazie = document.getElementById("antecedentepersonalesiheredocolateraledeneoplazieinput").value;
+  antecedentepersonalesiheredocolateraledeadictie = document.getElementById("antecedentepersonalesiheredocolateraledeadictieinput").value;
   expunerileparticulare = document.getElementById("expunerileparticulareinput").value;
   CUIfurnizor = document.getElementById("CUIinput").value;
   codparafamedic = document.getElementById("codparafainput").value;
@@ -74,7 +77,7 @@ function intocmesteriscograma() {
   varstapacient = document.getElementById("varstapacientinput").value;
 
   // Verifică dacă toate câmpurile sunt completate și completate corect
-  if (![pachetedetigari, imc, tensiunearterialasistolica, tensiunearterialadiastolica, colesterolultotal].every(Boolean) || isNaN(pachetedetigari) || pachetedetigari < 0 || isNaN(imc) || imc <= 0 || isNaN(tensiunearterialasistolica) || tensiunearterialasistolica <= 0 || isNaN(tensiunearterialadiastolica) || tensiunearterialadiastolica <= 0 || isNaN(colesterolultotal) || colesterolultotal <= 0  || rezultatc1 === "" || observatiiactivitatefizica === "" || observatiidieta === "" || observatiisanatateorala === "" || rezultatc2 === "" || antecedentepersonalesiheredocolaterale === "" || expunerileparticulare === "") {
+  if (![pachetedetigari, imc, tensiunearterialasistolica, tensiunearterialadiastolica, colesterolultotal].every(Boolean) || isNaN(pachetedetigari) || pachetedetigari < 0 || isNaN(imc) || imc <= 0 || isNaN(tensiunearterialasistolica) || tensiunearterialasistolica <= 0 || isNaN(tensiunearterialadiastolica) || tensiunearterialadiastolica <= 0 || isNaN(colesterolultotal) || colesterolultotal <= 0  || rezultatc1 === "" || observatiiactivitatefizica === "" || observatiidieta === "" || observatiisanatateorala === "" || rezultatc2 === "" || antecedentepersonalesiheredocolateraledeneoplazie === "" || expunerileparticulare === "" || antecedentepersonalesiheredocolateraledeadictie === "") {
     alert("Nu ați completat corespunzător toate câmpurile obligatorii marcate cu *!");
     return;
   }
@@ -96,21 +99,23 @@ function intocmesteriscograma() {
   }
 
   // Crează conținut de fișier text
-  var fileContent = "-- 1. Comportamente cu impact global asupra sănătăţii" + "\n\n" +
+  var fileContent = "-- 1. Comportamente cu impact global asupra sănătăţii --" + "\n\n" +
                     "- Câte pachete de țigări fumează pacientul pe an: " + pachetedetigari + "\n" +
                     "- S-a detectat un consum inadecvat de alcool: " + rezultatc1 + "\n" +
                     "- Observații privind activitatea fizică a pacientului: " + observatiiactivitatefizica + "\n" +
                     "- Observații privind dieta pacientului: " + observatiidieta + "\n" +
                     "- Observații privind sănătatea orală a pacientului: " + observatiisanatateorala + "\n" +
                     "- IMC pacient: " + imc + "\n" +
-                    "\n" + "-- 2. Riscul Cardiovascular" + "\n\n" +
+                    "\n" + "-- 2. Riscul Cardiovascular --" + "\n\n" +
                     "- Punctajul HeartScore SCORE: " + rezultatc2 + "\n" +
                     "- Tensiunea arterială sistolică a pacientului: " + tensiunearterialasistolica + " mmHg" + "\n" +
                     "- Tensiunea arterială diastolică a pacientului: " + tensiunearterialadiastolica + " mmHg" + "\n" +
                     "- Colesterolul total al pacientului: " + colesterolultotal + " mmol/L" + "\n" +
                     "\n" + "-- 3. Riscul Oncologic --" + "\n\n" +
-                    "- Antecedentele personale şi heredocolaterale de neoplazie la rudele de gradul I prin filiaţie directă ale pacientului: " + antecedentepersonalesiheredocolaterale + "\n" +
+                    "- Antecedentele personale şi heredocolaterale de neoplazie la rudele de gradul I prin filiaţie directă ale pacientului: " + antecedentepersonalesiheredocolateraledeneoplazie + "\n" +
                     "- Expunerile particulare (azbest, aniline etc.) ale pacientului: " + expunerileparticulare + "\n" +
+                    "\n" + "-- 4. Riscuri privind Sănătatea Mintală --" + "\n\n" +
+                    "- Antecedentele personale şi heredo-colaterale de adicţie la rudele de gradul I prin filiaţie directă ale pacientului: " + antecedentepersonalesiheredocolateraledeadictie + "\n" +
                     "\n" + "-- Date de identificare --" + "\n\n" +
                     "Cod parafă medic: " + codparafamedic + "\n" +
                     "CNP pacient: " + CNPpacient + "\n" +
