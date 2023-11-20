@@ -1,7 +1,7 @@
 let pachetedetigari = 0;
 
 let rezultatc1 = "";
-let rezultatc2 = "";
+let rezultatc2 = 0;
 let rezultatc3 = "";
 
 let observatiiactivitatefizica = "";
@@ -79,7 +79,7 @@ function intocmesteriscograma() {
   varstapacient = document.getElementById("varstapacientinput").value;
 
   // Verifică dacă toate câmpurile sunt completate și completate corect
-  if (![pachetedetigari, imc, tensiunearterialasistolica, tensiunearterialadiastolica, colesterolultotal].every(Boolean) || isNaN(pachetedetigari) || pachetedetigari < 0 || isNaN(imc) || imc <= 0 || isNaN(tensiunearterialasistolica) || tensiunearterialasistolica <= 0 || isNaN(tensiunearterialadiastolica) || tensiunearterialadiastolica <= 0 || isNaN(colesterolultotal) || colesterolultotal <= 0  || rezultatc1 === "" || observatiiactivitatefizica === "" || observatiidieta === "" || observatiisanatateorala === "" || rezultatc2 === "" || antecedentepersonalesiheredocolateraledeneoplazie === "" || expunerileparticulare === "" || antecedentepersonalesiheredocolateraledeadictie === "") {
+  if (![pachetedetigari, imc, tensiunearterialasistolica, tensiunearterialadiastolica, colesterolultotal, rezultatc2].every(Boolean) || isNaN(pachetedetigari) || pachetedetigari < 0 || isNaN(imc) || imc <= 0 || isNaN(tensiunearterialasistolica) || tensiunearterialasistolica <= 0 || isNaN(tensiunearterialadiastolica) || tensiunearterialadiastolica <= 0 || isNaN(colesterolultotal) || colesterolultotal <= 0 || isNaN(rezultatc2) || rezultatc2 < 0 || rezultatc1 === "" || observatiiactivitatefizica === "" || observatiidieta === "" || observatiisanatateorala === "" || antecedentepersonalesiheredocolateraledeneoplazie === "" || expunerileparticulare === "" || antecedentepersonalesiheredocolateraledeadictie === "" || rezultatc3 === "") {
     alert("Nu ați completat corespunzător toate câmpurile obligatorii marcate cu *!");
     return;
   }
