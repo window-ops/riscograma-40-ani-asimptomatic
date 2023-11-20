@@ -112,7 +112,7 @@ function intocmesteriscograma() {
                     "- Tensiunea arterială diastolică a pacientului: " + tensiunearterialadiastolica + " mmHg" + "\n" +
                     "- Colesterolul total al pacientului: " + colesterolultotal + " mmol/L" + "\n" +
                     "\n" + "-- 3. Riscul Oncologic --" + "\n\n" +
-                    "- Antecedentele personale şi heredocolaterale de neoplazie la rudele de gradul I prin filiaţie directă ale pacientului: " + antecedentepersonalesiheredocolateraledeneoplazie + "\n" +
+                    "- Antecedentele personale şi heredo-colaterale de neoplazie la rudele de gradul I prin filiaţie directă ale pacientului: " + antecedentepersonalesiheredocolateraledeneoplazie + "\n" +
                     "- Expunerile particulare (azbest, aniline etc.) ale pacientului: " + expunerileparticulare + "\n" +
                     "\n" + "-- 4. Riscuri privind Sănătatea Mintală --" + "\n\n" +
                     "- Antecedentele personale şi heredo-colaterale de adicţie la rudele de gradul I prin filiaţie directă ale pacientului: " + antecedentepersonalesiheredocolateraledeadictie + "\n" +
