@@ -24,8 +24,13 @@
                   <h4 class="my-0 text-center">1. Comportamente cu impact global asupra sănătăţii</h4>
                 </div>
               </div>
-              <label for="pachetedetigariinput" class="form-label">Câte pachete de țigări fumează pacientul pe an?*</label>
-              <input type="tel" class="form-control mb-3" placeholder="Introduceți numărul de pachete de țigări pe care pacientul le fumează în fiecare an..." onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57" id="pachetedetigariinput" required>
+              <div class="card mb-3">
+                <div class="card-header">Amănunte</div>
+                <div class="card-body">
+                  <label for="pachetedetigariinput" class="form-label">Câte pachete de țigări fumează pacientul pe an?*</label>
+                  <input type="tel" class="form-control" placeholder="Introduceți numărul de pachete de țigări pe care pacientul le fumează în fiecare an..." onkeypress="return (event.charCode == 8 || event.charCode == 0 || event.charCode == 13) ? null : event.charCode >= 48 && event.charCode <= 57" id="pachetedetigariinput" required>
+                </div>
+              </div>
               <div class="card mb-3">
                 <div class="card-header">Chestionar standard</div>
                 <div class="card-body">
@@ -121,13 +126,25 @@
                   <h4 class="my-0 text-center">3. Riscul Oncologic</h4>
                 </div>
               </div>
-              <div class="card">
+              <div class="card mb-3">
                 <div class="card-header">Observații medicale</div>
                 <div class="card-body">
-                  <label for="antecedentepersonalesiheredocolateraleinput" class="form-label">Antecedentele personale şi heredocolaterale de neoplazie la rudele de gradul I prin filiaţie directă ale pacientului*</label>
-                  <textarea class="form-control mb-3" placeholder="Introduceți observațiile privind antecedentele personale şi heredocolaterale de neoplazie la rudele de gradul I prin filiaţie directă ale pacientului..." id="antecedentepersonalesiheredocolateraleinput" rows="10" required></textarea>
+                  <label for="antecedentepersonalesiheredocolateraledeneoplazieinput" class="form-label">Antecedentele personale şi heredocolaterale de neoplazie la rudele de gradul I prin filiaţie directă ale pacientului*</label>
+                  <textarea class="form-control mb-3" placeholder="Introduceți observațiile privind antecedentele personale şi heredocolaterale de neoplazie la rudele de gradul I prin filiaţie directă ale pacientului..." id="antecedentepersonalesiheredocolateraledeneoplazieinput" rows="10" required></textarea>
                   <label for="expunerileparticulareinput" class="form-label">Expunerile particulare (azbest, aniline etc.) ale pacientului*</label>
                   <textarea class="form-control" placeholder="Introduceți observațiile privind expunerile particulare ale pacientului..." id="expunerileparticulareinput" rows="10" required></textarea>
+                </div>
+              </div>
+              <div class="card bg-light mb-3">
+                <div class="card-body">
+                  <h4 class="my-0 text-center">4. Riscuri privind Sănătatea Mintală</h4>
+                </div>
+              </div>
+              <div class="card mb-3">
+                <div class="card-header">Observații medicale</div>
+                <div class="card-body">
+                  <label for="antecedentepersonalesiheredocolateraledeadictieinput" class="form-label">Antecedentele personale şi heredo-colaterale de adicţie la rudele de gradul I prin filiaţie directă ale pacientului*</label>
+                  <textarea class="form-control mb-3" placeholder="Introduceți observațiile privind antecedentele personale şi heredocolaterale de adicţie la rudele de gradul I prin filiaţie directă ale pacientului..." id="antecedentepersonalesiheredocolateraledeadictieinput" rows="10" required></textarea>
                 </div>
               </div>
             </form>
