@@ -2,6 +2,7 @@ let pachetedetigari = 0;
 
 let rezultatc1 = "";
 let rezultatc2 = "";
+let rezultatc3 = "";
 
 let observatiiactivitatefizica = "";
 let observatiidieta = "";
@@ -71,6 +72,7 @@ function intocmesteriscograma() {
   antecedentepersonalesiheredocolateraledeneoplazie = document.getElementById("antecedentepersonalesiheredocolateraledeneoplazieinput").value;
   antecedentepersonalesiheredocolateraledeadictie = document.getElementById("antecedentepersonalesiheredocolateraledeadictieinput").value;
   expunerileparticulare = document.getElementById("expunerileparticulareinput").value;
+  rezultatc3 = document.getElementById("rezultatc3input").value;
   CUIfurnizor = document.getElementById("CUIinput").value;
   codparafamedic = document.getElementById("codparafainput").value;
   CNPpacient = document.getElementById("CNPpacientinput").value;
@@ -116,6 +118,7 @@ function intocmesteriscograma() {
                     "- Expunerile particulare (azbest, aniline etc.) ale pacientului: " + expunerileparticulare + "\n" +
                     "\n" + "-- 4. Riscuri privind Sănătatea Mintală --" + "\n\n" +
                     "- Antecedentele personale şi heredo-colaterale de adicţie la rudele de gradul I prin filiaţie directă ale pacientului: " + antecedentepersonalesiheredocolateraledeadictie + "\n" +
+                    "- Nivelul de risc a depresiei: " + rezultatc3 + "\n" +
                     "\n" + "-- Date de identificare --" + "\n\n" +
                     "Cod parafă medic: " + codparafamedic + "\n" +
                     "CNP pacient: " + CNPpacient + "\n" +
