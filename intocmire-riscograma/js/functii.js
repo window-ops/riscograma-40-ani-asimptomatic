@@ -79,11 +79,63 @@ function intocmesteriscograma() {
   varstapacient = document.getElementById("varstapacientinput").value;
 
   // Verifică dacă toate câmpurile sunt completate și completate corect
-  if (![pachetedetigari, imc, tensiunearterialasistolica, tensiunearterialadiastolica, colesterolultotal, rezultatc2].every(Boolean) || isNaN(pachetedetigari) || pachetedetigari < 0 || isNaN(imc) || imc <= 0 || isNaN(tensiunearterialasistolica) || tensiunearterialasistolica <= 0 || isNaN(tensiunearterialadiastolica) || tensiunearterialadiastolica <= 0 || isNaN(colesterolultotal) || colesterolultotal <= 0 || isNaN(rezultatc2) || rezultatc2 < 0 || rezultatc1 === "" || observatiiactivitatefizica === "" || observatiidieta === "" || observatiisanatateorala === "" || antecedentepersonalesiheredocolateraledeneoplazie === "" || expunerileparticulare === "" || antecedentepersonalesiheredocolateraledeadictie === "" || rezultatc3 === "") {
-    alert("Nu ați completat corespunzător toate câmpurile obligatorii marcate cu *!");
+  if (![pachetedetigari].every(Boolean) || isNaN(pachetedetigari) || pachetedetigari < 0) {
+    alert('Nu ați completat corespunzător: "Câte pachete de țigări fumează pacientul pe an?"');
     return;
   }
-  if (CUIfurnizor.length !== 12) {
+  else if (rezultatc1 === "") {
+    alert('Nu ați completat: "1 >> S-a detectat un consum inadecvat de alcool?"');
+    return;
+  }
+  else if (observatiiactivitatefizica === "") {
+    alert('Nu ați completat: "1 >> Observații privind activitatea fizică a pacientului"');
+    return;
+  }
+  else if (observatiidieta === "") {
+    alert('Nu ați completat: "1 >> Observații privind dieta pacientului"');
+    return;
+  }
+  else if (observatiisanatateorala === "") {
+    alert('Nu ați completat: " 1 >> Observații privind sănătatea orală a pacientului"');
+    return;
+  }
+  else if (![imc].every(Boolean) || isNaN(imc) || imc <= 0) {
+    alert('Nu ați completat corespunzător: "1 >> IMC pacient"');
+    return;
+  }
+  else if (![rezultatc2].every(Boolean) || isNaN(rezultatc2) || rezultatc2 <= 0) {
+    alert('Nu ați completat corespunzător: "2 >> Care este punctajul SCORE obținut în chestionar?"');
+    return;
+  }
+  else if (![tensiunearterialasistolica].every(Boolean) || isNaN(tensiunearterialasistolica) || tensiunearterialasistolica <= 0) {
+    alert('Nu ați completat corespunzător: "2 >> Tensiunea arterială sistolică a pacientului (mmHg)"');
+    return;
+  }
+  else if (![tensiunearterialadiastolica].every(Boolean) || isNaN(tensiunearterialadiastolica) || tensiunearterialadiastolica <= 0) {
+    alert('Nu ați completat corespunzător: "2 >> Tensiunea arterială diastolică a pacientului (mmHg)"');
+    return;
+  }
+  else if (![colesterolultotal].every(Boolean) || isNaN(colesterolultotal) || colesterolultotal <= 0) {
+    alert('Nu ați completat corespunzător: "2 >> Colesterolul total al pacientului (mmol/L)"');
+    return;
+  }
+  else if (antecedentepersonalesiheredocolateraledeneoplazie === "") {
+    alert('Nu ați completat: "3 >> Antecedentele personale şi heredo-colaterale de neoplazie la rudele de gradul I prin filiaţie directă ale pacientului"');
+    return;
+  }
+  else if (expunerileparticulare === "") {
+    alert('Nu ați completat: "3 >> Expunerile particulare (azbest, aniline etc.) ale pacientului"');
+    return;
+  }
+  else if (antecedentepersonalesiheredocolateraledeadictie === "") {
+    alert('Nu ați completat: "4 >> Antecedentele personale şi heredo-colaterale de adicţie la rudele de gradul I prin filiaţie directă ale pacientului"');
+    return;
+  }
+  else if (rezultatc3 === "") {
+    alert('Nu ați completat: "4 >> Care este nivelul de risc obținut în chestionar?"');
+    return;
+  }
+  else if (CUIfurnizor.length !== 12) {
     alert("CUI-ul furnizorului trebuie să aibă 12 caractere!");
     return;
   }
