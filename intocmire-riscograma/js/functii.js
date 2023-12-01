@@ -80,7 +80,7 @@ function intocmesteriscograma() {
 
   // Verifică dacă toate câmpurile sunt completate și completate corect
   if (![pachetedetigari].every(Boolean) || isNaN(pachetedetigari) || pachetedetigari < 0) {
-    alert('Nu ați completat corespunzător: "Câte pachete de țigări fumează pacientul pe an?"');
+    alert('Nu ați completat corespunzător: "1 >> Câte pachete de țigări fumează pacientul pe an?"');
     return;
   }
   else if (rezultatc1 === "") {
